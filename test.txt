@@ -1,0 +1,5 @@
+Select p_state, avg(p_balance) as Average
+from patient
+Where Therapnum = 14 or therapnum = 08
+Group by p_state
+Having Average <300;
